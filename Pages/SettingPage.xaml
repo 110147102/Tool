@@ -1,0 +1,47 @@
+<Page x:Class="WinUI.Pages.SettingPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+    <Grid x:Name="RootGrid" Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <StackPanel Margin="20,20,20,20">
+
+            <TextBlock Text="设置" FontSize="34" FontWeight="SemiBold" Margin="0,0,0,16"/>
+
+            <TextBlock Text="关于" FontSize="24" FontWeight="SemiBold" Margin="0,0,0,12"/>
+            <TextBlock Text="原作者:Idle_Archon" Margin="0,0,0,10"/>
+
+            <Expander MinHeight="75"
+                      Margin="0,40,00,0"
+                      HorizontalAlignment="Stretch">
+                <Expander.Header>
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="Auto"/>
+                        </Grid.ColumnDefinitions>
+                        <StackPanel Orientation="Horizontal" Spacing="20" Grid.Column="0">
+                        <ImageIcon 
+                              Source="ms-appx:///Assets/logo.png"
+                              Width="24"
+                              Height="24"/>
+                        <StackPanel>
+                            <TextBlock Text="Sandrone_Tool."
+                                   FontSize="16"
+                                   FontWeight="SemiBold"/>
+                            <TextBlock Text="This a TextBlock."
+                                   FontSize="12"
+                                   Opacity="0.7"/>
+                        </StackPanel>
+                    </StackPanel>
+                    <TextBlock Text="0.1.0-alpha.1"
+                               FontSize="14"
+                               Opacity="0.7"
+                               HorizontalAlignment="Right"
+                               VerticalAlignment="Center"
+                               Grid.Column="1"/>
+                    </Grid>
+                </Expander.Header>
+            </Expander>
+        </StackPanel>
+    </Grid>
+</Page>
